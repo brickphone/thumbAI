@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 const Navbar = () => {
     return (
         <div id="navbar-container" className="flex h-[80px] w-full items-center">
-            <div id="navbar-brand" className="flex items-center space-x-1">
+            <div id="navbar-brand" className="flex items-center space-x-1 ml-2">
                 <Image 
                     alt="logo"
                     src={logo}
@@ -15,11 +15,11 @@ const Navbar = () => {
             </div>
             <div id="navbar-middle" className="flex space-x-5 absolute left-1/2 transform -translate-x-1/2">
                 <p className="flex">Features
-                    <ChevronDown />
+                    <ChevronDown className="cursor-pointer" />
                 </p>
                 <p>Pricing</p>
                 <p className="flex">Resources
-                    <ChevronDown />
+                    <ChevronDown className="cursor-pointer" />
                 </p>
             </div>
             <Button className="ml-auto mr-2">Get Started</Button>
