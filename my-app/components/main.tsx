@@ -42,7 +42,7 @@ const Main = () => {
                 </div>
                 <div id="demo">
                     <video id="demo-video">
-                        <source src="../public/videos/showcase.mp4" type="video/mp4" />
+                        <source src="/videos/showcase.mp4" type="video/mp4" />
                     </video>
                 </div>
             </div>
