@@ -7,11 +7,12 @@ import redStars from "../public/svgs/redstars.svg";
 import cashjordan from "../public/pictures/cashjordan.jpeg";
 import mrbeast from "../public/pictures/mrbeast.jpeg";
 import magnates from "../public/pictures/magnates.jpeg";
+import Thumbnails from "./landing/thumbnails";
 
 const Main = () => {
     return (
         <div id="landing-container" className="pt-12">
-            <div id="landing-header-video" className="flex flex-row">
+            <div id="landing-header-video" className="flex flex-col sm:flex-row">
                 <div id="landing-header" className="flex flex-col w-[600px] items-center space-y-2">
                 <div id="laurel" className="relative flex flex-col items-center">
                     <Image 
@@ -46,6 +47,7 @@ const Main = () => {
                         <p className="font-semibold">Trusted by 200+ Creators</p>
                     </div>
                 </div>
+                {/* Demo video */}
                 <div id="demo" className="ml-auto mr-2">
                     <video id="demo-video" width="457" className="border-2 rounded-xl h-[340px]">
                         <source src="/videos/showcase.mp4" type="video/mp4" />
@@ -56,6 +58,7 @@ const Main = () => {
             <div className="flex items-center justify-center pt-6">
                 <p className="font-semibold">Trusted By</p>
             </div>
+            {/* Testamonials */}
             <div id="testamonials" className="flex flex-row justify-center items-center pt-2 space-x-3">
                 <div id="testamonial-1" className="flex flex-col pt-2 items-center">
                     <Image alt="red-stars" src={redStars} />
@@ -99,6 +102,10 @@ const Main = () => {
                     </div>
                     <p className="text-sm">&quot;Just fired my designer&quot;.</p>
                 </div>
+            </div>
+            {/* thumbnail shocase */}
+            <div id="thumbnail-showcase" className="pt-12">
+                <Thumbnails />
             </div>
         </div>
     )

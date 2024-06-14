@@ -75,11 +75,22 @@
     }
   }
 
+
   @layer base {
     * {
       @apply border-border;
     }
     body {
       @apply bg-background text-foreground;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #navbar-middle {
+      display: none;
+    }
+
+    #landing-header {
+      width: 400px;
     }
   }
