@@ -27,14 +27,16 @@ const Main = () => {
                             src={Stars}
                         />
                     </div>
-                    </div>
+                </div>
                     <div id="header-text">
-                        <h1 className="text-center leading-[70px]">Most Advanced AI Thumbnail Generator</h1>
-                        <p className="text-center">ThumbAI: Generate stunning AI-powered thumbnails in seconds,
+                    <h1 className="text-center leading-[70px]">
+                        Most Advanced <span className="text-[#FF4444]">AI Thumbnail</span> Generator
+                    </h1>
+                    <p className="text-center">ThumbAI: Generate stunning AI-powered thumbnails in seconds,
                             faster and more reliably than hiring a designer or doing it yourself.
-                        </p>
+                    </p>
                     </div>
-                    <Button className="w-[150px] h-[45px]">5 Free Thumbnails</Button>
+                    <Button className="button w-[150px] h-[45px]">5 Free Thumbnails</Button>
                     <div id="avatar-group" className="flex items-center space-x-1">
                         <div id="avatar-stack" className="flex -space-x-4">
                             <Image width={40} height={40} className="bozarder-2 border-white rounded-full dark:border-gray-800" src={avatar1} alt="avatar" />
@@ -48,20 +50,20 @@ const Main = () => {
                     </div>
                 </div>
                 {/* Demo video */}
-                <div id="demo" className="ml-auto mr-2">
-                    <video id="demo-video" width="457" className="border-2 rounded-xl h-[340px]">
+                <div id="demo" className="pt-5 flex justify-center items-center sm:ml-auto mr-2">
+                    <video id="demo-video" className="border-2 rounded-xl h-[340px] w-[457px]">
                         <source src="/videos/showcase.mp4" type="video/mp4" />
                     </video>
                 </div>
             </div>
             
-            <div className="flex items-center justify-center pt-6">
+            <div className="flex items-center justify-center pt-12">
                 <p className="font-semibold">Trusted By</p>
             </div>
             {/* Testamonials */}
             <div id="testamonials" className="flex flex-row justify-center items-center pt-2 space-x-3">
                 <div id="testamonial-1" className="flex flex-col pt-2 items-center">
-                    <Image alt="red-stars" src={redStars} />
+                    <Image alt="red-stars" className="ml-4" src={redStars} />
                     <div id="profile-name" className="flex items-center pt-2 ml-2">
                         <Image 
                             width={34} 

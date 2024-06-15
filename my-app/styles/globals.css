@@ -75,6 +75,10 @@
     }
   }
 
+  .button {
+    background-color: #FF4848;
+  }
+
 
   @layer base {
     * {

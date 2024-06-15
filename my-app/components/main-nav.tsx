@@ -14,15 +14,15 @@ const Navbar = () => {
                 <p className="font-semibold">ThumbAI</p>
             </div>
             <div id="navbar-middle" className="flex space-x-5 absolute left-1/2 transform -translate-x-1/2">
-                <p className="flex">Features
+                <p className="flex font-semibold">Features
                     <ChevronDown className="cursor-pointer" />
                 </p>
-                <p>Pricing</p>
-                <p className="flex">Resources
+                <p className="font-semibold">Pricing</p>
+                <p className="flex font-semibold">Resources
                     <ChevronDown className="cursor-pointer" />
                 </p>
             </div>
-            <Button className="ml-auto mr-2">Get Started</Button>
+            <Button className="button ml-auto mr-2">Get Started</Button>
         </div>
     )
 };
