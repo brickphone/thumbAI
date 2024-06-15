@@ -8,10 +8,16 @@ import cashjordan from "../public/pictures/cashjordan.jpeg";
 import mrbeast from "../public/pictures/mrbeast.jpeg";
 import magnates from "../public/pictures/magnates.jpeg";
 import Thumbnails from "./landing/thumbnails";
+import redBackground from "../public/svgs/redbg.svg";
 
 const Main = () => {
     return (
-        <div id="landing-container" className="pt-12">
+       <div id="landing-container" className="pt-12">
+            <Image 
+                alt="red-background" 
+                src={redBackground}
+                className="absolute top-0 left-0 w-full h-full object-cover z-[-10]"
+                />
             <div id="landing-header-video" className="flex flex-col sm:flex-row">
                 <div id="landing-header" className="flex flex-col w-[600px] items-center space-y-2">
                 <div id="laurel" className="relative flex flex-col items-center">
@@ -29,11 +35,11 @@ const Main = () => {
                     </div>
                 </div>
                     <div id="header-text">
-                    <h1 className="text-center leading-[70px]">
-                        Most Advanced <span className="text-[#FF4444]">AI Thumbnail</span> Generator
-                    </h1>
-                    <p className="text-center">ThumbAI: Generate stunning AI-powered thumbnails in seconds,
-                            faster and more reliably than hiring a designer or doing it yourself.
+                        <h1 className="text-center leading-[70px]">
+                            Most Advanced <span className="text-[#FF4444]">AI Thumbnail</span> Generator
+                        </h1>
+                        <p className="text-center">ThumbAI: Generate stunning AI-powered thumbnails in seconds,
+                                faster and more reliably than hiring a designer or doing it yourself.
                     </p>
                     </div>
                     <Button className="button w-[150px] h-[45px]">5 Free Thumbnails</Button>
@@ -49,8 +55,9 @@ const Main = () => {
                         <p className="font-semibold">Trusted by 200+ Creators</p>
                     </div>
                 </div>
+                
                 {/* Demo video */}
-                <div id="demo" className="pt-5 flex justify-center items-center sm:ml-auto mr-2">
+                <div id="demo" className="pt-5 flex justify-center items-center sm:ml-auto mr-12">
                     <video id="demo-video" className="border-2 rounded-xl h-[340px] w-[457px]">
                         <source src="/videos/showcase.mp4" type="video/mp4" />
                     </video>
@@ -59,7 +66,7 @@ const Main = () => {
             
             <div className="flex items-center justify-center pt-12">
                 <p className="font-semibold">Trusted By</p>
-            </div>
+            </div> 
             {/* Testamonials */}
             <div id="testamonials" className="flex flex-row justify-center items-center pt-2 space-x-3">
                 <div id="testamonial-1" className="flex flex-col pt-2 items-center">

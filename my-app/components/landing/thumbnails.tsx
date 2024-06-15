@@ -40,7 +40,7 @@ const Thumbnails = () => {
             ))}
         </div>
         {/* bottom thumbnails */}
-        <div id="bottom-thumbnails">
+        <div id="bottom-thumbnails" className="pt-10">
             {bottomThumbnails.map((thumb, index) => (
                     <div className="thumbnail" key={index}>
                         <Image 
