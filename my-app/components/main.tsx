@@ -9,6 +9,8 @@ import mrbeast from "../public/pictures/mrbeast.jpeg";
 import magnates from "../public/pictures/magnates.jpeg";
 import Thumbnails from "./landing/thumbnails";
 import redBackground from "../public/svgs/redbg.svg";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/card";
+import faceswapShowcase from "../public/svgs/faceswapShowcase.svg";
 
 const Main = () => {
     return (
@@ -115,6 +117,24 @@ const Main = () => {
             {/* thumbnail shocase */}
             <div id="thumbnail-showcase" className="pt-12">
                 <Thumbnails />
+            </div>
+            {/* Features */}
+            <div id="features-container" className="pt-12 flex flex-col justify-center items-center">
+                <p className="text-4xl font-semibold">Features</p>
+                <div id="faceswap-feature" className="pt-6">
+                    <Card className="sm:w-[1000px]">
+                        <CardHeader>
+                            <CardTitle>Faceswap</CardTitle>
+                            <CardDescription>Upload a picture of yourself, and watch our AI smoothly swap out the original face with yours, ensuring your audience instantly recognizes you.</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            <Image 
+                                alt="faceswap-showcase"
+                                src={faceswapShowcase}
+                            />
+                        </CardContent>
+                    </Card>
+                </div>
             </div>
         </div>
     )
