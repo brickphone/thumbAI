@@ -11,6 +11,7 @@ import Thumbnails from "./landing/thumbnails";
 import redBackground from "../public/svgs/redbg.svg";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/card";
 import faceswapShowcase from "../public/svgs/faceswapShowcase.svg";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 const Main = () => {
     return (
@@ -19,7 +20,7 @@ const Main = () => {
                 alt="red-background" 
                 src={redBackground}
                 className="absolute top-0 left-0 w-full h-full object-cover z-[-10]"
-                />
+            />
             <div id="landing-header-video" className="flex flex-col sm:flex-row">
                 <div id="landing-header" className="flex flex-col w-[600px] items-center space-y-2">
                 <div id="laurel" className="relative flex flex-col items-center">
@@ -70,7 +71,7 @@ const Main = () => {
                 <p className="font-semibold">Trusted By</p>
             </div> 
             {/* Testamonials */}
-            <div id="testamonials" className="flex flex-row justify-center items-center pt-2 space-x-3">
+            <div id="testamonials" className="flex flex-col sm:flex-row justify-center items-center pt-2 space-x-3">
                 <div id="testamonial-1" className="flex flex-col pt-2 items-center">
                     <Image alt="red-stars" className="ml-4" src={redStars} />
                     <div id="profile-name" className="flex items-center pt-2 ml-2">
@@ -118,6 +119,7 @@ const Main = () => {
             <div id="thumbnail-showcase" className="pt-12">
                 <Thumbnails />
             </div>
+            
             {/* Features */}
             <div id="features-container" className="pt-12 flex flex-col justify-center items-center">
                 <p className="text-4xl font-semibold">Features</p>
@@ -134,6 +136,22 @@ const Main = () => {
                             />
                         </CardContent>
                     </Card>
+                </div>
+            </div>
+
+            {/* Pricing */}
+            <div id="pricing-container" className="pt-24 flex flex-col justify-center items-center">
+                <div id="pricing-text" className="text-center">
+                    <p className="text-3xl font-semibold">Pricing <span>🚀</span></p>
+                    <p>Try for free and upgrade to get more and better features.</p>
+                </div>
+                <div id="pricing-tabs" className="pt-6">
+                    <Tabs defaultValue="Monthly" className="w-[400px]">
+                        <TabsList className="grid w-full grid-cols-2">
+                            <TabsTrigger value="Monthly">Monthly</TabsTrigger>
+                            <TabsTrigger value="Yearly">Yearly</TabsTrigger>
+                        </TabsList>
+                    </Tabs>
                 </div>
             </div>
         </div>
