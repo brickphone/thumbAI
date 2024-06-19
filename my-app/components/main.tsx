@@ -12,6 +12,9 @@ import redBackground from "../public/svgs/redbg.svg";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/card";
 import faceswapShowcase from "../public/svgs/faceswapShowcase.svg";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import PricingCardFree from "./pricing-cards/pricingCardFree";
+import PricingCardStandard from "./pricing-cards/pricingCardStandard";
+import PricingCardPremium from "./pricing-cards/pricingCardPremium";
 
 const Main = () => {
     return (
@@ -149,9 +152,17 @@ const Main = () => {
                     <Tabs defaultValue="Monthly" className="w-[400px]">
                         <TabsList className="grid w-full grid-cols-2">
                             <TabsTrigger value="Monthly">Monthly</TabsTrigger>
-                            <TabsTrigger value="Yearly">Yearly</TabsTrigger>
+                            <TabsTrigger value="Yearly">Yearly
+                                <span id="save-badge" className="flex-grow-0 min-w-[75px] h-[25px] bg-green-200 ml-5 rounded-sm items-center justify-center flex text-green-800 font-light text-xs">Save 20%</span>
+                            </TabsTrigger>
                         </TabsList>
                     </Tabs>
+                </div>
+                {/* Pricing cards */}
+                <div id="cards-container" className="pt-6 flex flex-col sm:grid grid-cols-3 gap-8">
+                    <PricingCardFree />
+                    <PricingCardStandard />
+                    <PricingCardPremium />
                 </div>
             </div>
         </div>
