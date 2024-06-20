@@ -16,6 +16,7 @@ import PricingCardFree from "./pricing-cards/pricingCardFree";
 import PricingCardStandard from "./pricing-cards/pricingCardStandard";
 import PricingCardPremium from "./pricing-cards/pricingCardPremium";
 import SignupBox from "./signupBox";
+import Footer from "./footer";
 
 const Main = () => {
     return (
