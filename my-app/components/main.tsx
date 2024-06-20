@@ -15,6 +15,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import PricingCardFree from "./pricing-cards/pricingCardFree";
 import PricingCardStandard from "./pricing-cards/pricingCardStandard";
 import PricingCardPremium from "./pricing-cards/pricingCardPremium";
+import SignupBox from "./signupBox";
 
 const Main = () => {
     return (
@@ -164,6 +165,9 @@ const Main = () => {
                     <PricingCardStandard />
                     <PricingCardPremium />
                 </div>
+            </div>
+            <div id="signupbox" className="pt-32 flex justify-center">
+                <SignupBox />
             </div>
         </div>
     )

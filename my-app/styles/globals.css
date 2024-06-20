@@ -70,6 +70,11 @@
     background-color: #FF4848;
   }
 
+  #signupbox-container {
+    background: rgb(255,60,60);
+  background: linear-gradient(90deg, rgba(255,60,60,1) 0%, rgba(240,53,11,1) 100%);
+  }
+
 
   @layer base {
     * {
