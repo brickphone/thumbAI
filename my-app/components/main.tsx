@@ -129,9 +129,9 @@ const Main = () => {
             <div id="features-container" className="pt-12 flex flex-col justify-center items-center">
                 <p className="text-4xl font-semibold">Features</p>
                 <div id="faceswap-feature" className="pt-6">
-                    <Card className="sm:w-[1000px]">
+                    <Card className="sm:w-[1000px] h-[340px]">
                         <CardHeader>
-                            <CardTitle>Faceswap</CardTitle>
+                            <CardTitle className="pt-5">Faceswap</CardTitle>
                             <CardDescription>Upload a picture of yourself, and watch our AI smoothly swap out the original face with yours, ensuring your audience instantly recognizes you.</CardDescription>
                         </CardHeader>
                         <CardContent>
