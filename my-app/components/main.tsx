@@ -65,8 +65,8 @@ const Main = () => {
                 </div>
                 
                 {/* Demo video */}
-                <div id="demo" className="pt-5 flex justify-center items-center sm:ml-auto mr-12">
-                    <video id="demo-video" className="border-2 rounded-xl h-[340px] w-[457px]">
+                <div id="demo" className="pt-5 flex justify-center items-center sm:ml-[5%]">
+                    <video id="demo-video" className="border-2 rounded-xl sm:h-[340px] w-[457px]">
                         <source src="/videos/showcase.mp4" type="video/mp4" />
                     </video>
                 </div>
