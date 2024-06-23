@@ -16,7 +16,7 @@ import PricingCardFree from "./pricing-cards/pricingCardFree";
 import PricingCardStandard from "./pricing-cards/pricingCardStandard";
 import PricingCardPremium from "./pricing-cards/pricingCardPremium";
 import SignupBox from "./signupBox";
-import Footer from "./footer";
+import logoWhite from "../public/svgs/logoWhite.svg";
 
 const Main = () => {
     return (
@@ -73,7 +73,14 @@ const Main = () => {
             </div>
             
             <div className="flex items-center justify-center pt-12">
-                <p className="font-semibold">Trusted By</p>
+                <div id="trusted-bg" className="bg-red-400 rounded-full w-[125px] h-[26px] flex items-center justify-center space-x-1">
+                    <Image 
+                        alt="logo-svg" 
+                        src={logoWhite}  
+                        width={20}
+                        />
+                    <p className="font-semibold flex justify-center text-white text-xs">Trusted By</p>
+                </div>
             </div> 
             {/* Testamonials */}
             <div id="testamonials" className="flex flex-col sm:flex-row justify-center items-center pt-2 space-x-3">
