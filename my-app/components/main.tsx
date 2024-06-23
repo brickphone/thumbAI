@@ -17,6 +17,8 @@ import PricingCardStandard from "./pricing-cards/pricingCardStandard";
 import PricingCardPremium from "./pricing-cards/pricingCardPremium";
 import SignupBox from "./signupBox";
 import logoWhite from "../public/svgs/logoWhite.svg";
+import faceSwapMobile from "../public/svgs/faceswapShowcaseMobile.svg";
+import FaceswapImage from "./landing/faceswap-showcase";
 
 const Main = () => {
     return (
@@ -136,23 +138,31 @@ const Main = () => {
             <div id="features-container" className="pt-12 flex flex-col justify-center items-center">
                 <p className="text-4xl font-semibold">Features</p>
                 <div id="faceswap-feature" className="pt-6">
-                    <Card className="sm:w-[1000px] h-[340px]">
+                    <Card className="sm:w-[1000px] h-[740px] sm:h-[340px]">
                         <CardHeader>
                             <CardTitle className="pt-5">Faceswap</CardTitle>
                             <CardDescription>Upload a picture of yourself, and watch our AI smoothly swap out the original face with yours, ensuring your audience instantly recognizes you.</CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <Image 
-                                alt="faceswap-showcase"
-                                src={faceswapShowcase}
-                            />
+                            <div id="mobile-showcase" className="block ml-5 sm:hidden">
+                                <Image
+                                    alt="faceswap-showcase-mobile"
+                                    src={faceSwapMobile}
+                                />
+                            </div>
+                            <div id="desktop-showcase" className="hidden sm:block">
+                                <Image 
+                                    alt="faceswap-showcase"
+                                    src={faceswapShowcase}  
+                                />
+                            </div>
                         </CardContent>
                     </Card>
                 </div>
             </div>
 
             {/* Pricing */}
-            <div id="pricing-container" className="pt-24 flex flex-col justify-center items-center">
+            <div id="pricing-container" className="pt-64 flex flex-col justify-center items-center">
                 <div id="pricing-text" className="text-center">
                     <p className="text-3xl font-semibold">Pricing <span>🚀</span></p>
                     <p>Try for free and upgrade to get more and better features.</p>
