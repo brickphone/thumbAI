@@ -12,6 +12,7 @@ const Card = React.forwardRef<
       "rounded-2xl border bg-card text-card-foreground shadow-sm",
       className
     )}
+    id="card-custom"
     {...props}
   />
 ))

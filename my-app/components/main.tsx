@@ -18,7 +18,7 @@ import PricingCardPremium from "./pricing-cards/pricingCardPremium";
 import SignupBox from "./signupBox";
 import logoWhite from "../public/svgs/logoWhite.svg";
 import faceSwapMobile from "../public/svgs/faceswapShowcaseMobile.svg";
-import FaceswapImage from "./landing/faceswap-showcase";
+import faceswapGraident from "../public/svgs/faceswapGradient.svg";
 
 const Main = () => {
     return (
@@ -138,25 +138,31 @@ const Main = () => {
             <div id="features-container" className="pt-12 flex flex-col justify-center items-center">
                 <p className="text-4xl font-semibold">Features</p>
                 <div id="faceswap-feature" className="pt-6">
-                    <Card className="sm:w-[1000px] h-[740px] sm:h-[340px]">
-                        <CardHeader>
-                            <CardTitle className="pt-5">Faceswap</CardTitle>
-                            <CardDescription>Upload a picture of yourself, and watch our AI smoothly swap out the original face with yours, ensuring your audience instantly recognizes you.</CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            <div id="mobile-showcase" className="block ml-5 sm:hidden">
-                                <Image
-                                    alt="faceswap-showcase-mobile"
-                                    src={faceSwapMobile}
-                                />
-                            </div>
-                            <div id="desktop-showcase" className="hidden sm:block">
-                                <Image 
-                                    alt="faceswap-showcase"
-                                    src={faceswapShowcase}  
-                                />
-                            </div>
-                        </CardContent>
+                    <Card className="sm:w-[1000px] h-[740px] sm:h-[340px] relative overflow-hidden">
+                        <div 
+                            className="absolute inset-[-2px] bg-no-repeat bg-cover z-10"
+                            style={{ backgroundImage: `url(${faceswapGraident.src})` }}
+                        ></div>
+                        <div className="relative z-20">
+                            <CardHeader>
+                                <CardTitle className="pt-5">Faceswap</CardTitle>
+                                <CardDescription>Upload a picture of yourself, and watch our AI smoothly swap out the original face with yours, ensuring your audience instantly recognizes you.</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div id="mobile-showcase" className="block ml-5 sm:hidden">
+                                    <Image
+                                        alt="faceswap-showcase-mobile"
+                                        src={faceSwapMobile}
+                                    />
+                                </div>
+                                <div id="desktop-showcase" className="hidden sm:block">
+                                    <Image 
+                                        alt="faceswap-showcase"
+                                        src={faceswapShowcase}  
+                                    />
+                                </div>
+                            </CardContent>
+                        </div>
                     </Card>
                 </div>
             </div>
