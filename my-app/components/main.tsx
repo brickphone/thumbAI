@@ -19,6 +19,8 @@ import SignupBox from "./signupBox";
 import logoWhite from "../public/svgs/logoWhite.svg";
 import faceSwapMobile from "../public/svgs/faceswapShowcaseMobile.svg";
 import faceswapGraident from "../public/svgs/faceswapGradient.svg";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
+
 
 const Main = () => {
     return (
@@ -190,6 +192,42 @@ const Main = () => {
                     <PricingCardPremium />
                 </div>
             </div>
+
+            <div id="faq" className="pt-12">
+                <div id="faq-text" className="text-center flex flex-col items-center">
+                    <p className="text-3xl font-semibold">Frequently Asked Questions<span>⚡</span></p>
+                    <p className="text-center">Here are the most asked questions, if you have any more, do not hesitate to contact us <p className="font-bold cursor-pointer">here.</p></p>
+                </div>
+                <div id="faq-accordion" className="pt-5 flex items-center justify-center">
+                    <Accordion type="single" collapsible className="w-[560px]">
+                        <AccordionItem value="item-1">
+                            <AccordionTrigger>What is a credit?</AccordionTrigger>
+                            <AccordionContent>
+                                A credit is what you use to generate images, the currency that you use. 1 Credit = 1 image generation.
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-2">
+                            <AccordionTrigger>Why choose ThumbAI over Midjourney / DALL-E?</AccordionTrigger>
+                            <AccordionContent>
+                                Midjourney / DALL-E, as well as other AI image generators are just generic ones, wheras ThumbAI is specifically trained on making thumbnails.
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-3">
+                            <AccordionTrigger>Can I cancel my subscription at any time?</AccordionTrigger>
+                            <AccordionContent>
+                                Yes you can!
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-4">
+                            <AccordionTrigger>Can I purchase extra credits if I run out of the ones in my current plan?</AccordionTrigger>
+                            <AccordionContent>
+                                Absolutely, that is not a problem at all.
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
+                </div>
+            </div>
+
             <div id="signupbox" className="pt-32 flex justify-center">
                 <SignupBox />
             </div>
