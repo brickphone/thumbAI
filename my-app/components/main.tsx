@@ -196,7 +196,7 @@ const Main = () => {
             <div id="faq" className="pt-12">
                 <div id="faq-text" className="text-center flex flex-col items-center">
                     <p className="text-3xl font-semibold">Frequently Asked Questions<span>⚡</span></p>
-                    <p className="text-center">Here are the most asked questions, if you have any more, do not hesitate to contact us <p className="font-bold cursor-pointer">here.</p></p>
+                    <p className="text-center">Here are the most asked questions, if you have any more, do not hesitate to contact us <span className="font-bold cursor-pointer">here.</span></p>
                 </div>
                 <div id="faq-accordion" className="pt-5 flex items-center justify-center">
                     <Accordion type="single" collapsible className="w-[560px]">

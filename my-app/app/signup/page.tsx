@@ -31,21 +31,21 @@ const SignUp = () => {
                     {/* login form */}
                     <form className="pt-3">
                         <div id="below" className="flex flex-col">
-                            <div id="name-input" className="">
+                            <div id="name-input">
                                 <div id="label-name" className="flex flex-row items-center">
-                                    <p>Name</p><p className="text-red-500">*</p>
+                                    <p className="text-sm">Name</p><p className="text-red-500">*</p>
                                 </div>
                                 <Input className="w-[360px] sm:w-[380px] h-[40px]" placeholder="Your name" />
                             </div>
                             <div id="email-input" className="mt-2">
                                 <div id="label-name" className="flex flex-row items-center">
-                                    <p>Email</p><p className="text-red-500">*</p>
+                                    <p className="text-sm">Email</p><p className="text-red-500">*</p>
                                 </div>
                                 <Input className="w-[360px] sm:w-[380px] h-[40px]" placeholder="user@email.com" />
                             </div>
                             <div id="password-input" className="mt-2">
                                 <div id="label-name" className="flex flex-row items-center">
-                                    <p>Password</p><p className="text-red-500">*</p>
+                                    <p className="text-sm">Password</p><p className="text-red-500">*</p>
                                 </div>
                                 <Input className="w-[360px] sm:w-[380px] h-[40px]" placeholder="Password" />
                             </div>
