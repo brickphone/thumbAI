@@ -8,14 +8,18 @@ import xMark from "../../public/svgs/xmark.svg";
 const PricingCardFree = () => {
     return (
         <div id="pricing-free" className="w-[327px] h-[480px] border rounded-2xl border-gray-200">
-            <div id="plan-top" className="flex flex-col space-y-5 pt-4 ml-4">
+            <div id="plan-top" className="flex flex-col pt-4 ml-4">
                 <h2 className="text-2xl">Free Plan</h2>
-                <span className="flex flex-row items-center">
+                <div id="price-discount" className="mt-2 flex items-center space-x-2">
+                    <p className="text-2xl line-through font-semibold text-gray-600">$9</p>
+                    <span id="discount-badge" className="px-2 h-[30px] flex items-center rounded-xl text-green-600">Save 100%</span>
+                </div>
+                <span className="flex flex-row items-center mt-2">
                     <p className="text-5xl font-semibold">$0</p>
                     <p className="pt-4 font-light">per month</p>
                 </span>
-                <p className="text-sm">Generate up to 120 thumbnails per year.</p>
-                <Button className="w-[242px] h-[35px] text-xs">Create Account</Button>
+                <p className="text-sm mt-2">Generate up to 120 thumbnails per year.</p>
+                <Button className="w-[242px] h-[35px] text-xs mt-1">Create Account</Button>
             </div>
             
             <Separator className="mt-9" />

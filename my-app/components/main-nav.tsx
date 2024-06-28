@@ -6,7 +6,7 @@ import menuSvg from "../public/svgs/menu.svg";
 
 const Navbar = () => {
     return (
-        <div id="navbar-container" className="flex rounded-full h-[80px] w-full items-center backdrop-blur-3xl bg-white/10 sticky top-3 z-10">
+        <div id="navbar-container" className="flex rounded-full h-[80px] w-full border-white items-center backdrop-blur-3xl bg-white/10 sticky top-3 z-10">
             <div id="navbar-brand" className="flex items-center space-x-1 ml-2">
                 <div id="mobile-menu" className="sm:hidden rounded-lg w-[40px] h-[40px] flex items-center justify-center bg-black mr-5">
                     <Image 

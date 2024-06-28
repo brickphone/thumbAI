@@ -83,6 +83,10 @@
     background-color: #FEF2F2;
   }
 
+  #discount-badge {
+    background-color: #F0FDF4;
+}
+
   @layer base {
     * {
       @apply border-border;
