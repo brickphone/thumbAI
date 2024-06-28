@@ -79,6 +79,9 @@
     border-color: #E6E6E6;
   }
 
+  #pricing-badge {
+    background-color: #FEF2F2;
+  }
 
   @layer base {
     * {

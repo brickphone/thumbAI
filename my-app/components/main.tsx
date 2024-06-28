@@ -9,6 +9,7 @@ import mrbeast from "../public/pictures/mrbeast.jpeg";
 import magnates from "../public/pictures/magnates.jpeg";
 import Thumbnails from "./landing/thumbnails";
 import redBackground from "../public/svgs/redbg.svg";
+import redClock from "../public/svgs/redclock.svg";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/card";
 import faceswapShowcase from "../public/svgs/faceswapShowcase.svg";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
@@ -20,9 +21,10 @@ import logoWhite from "../public/svgs/logoWhite.svg";
 import faceSwapMobile from "../public/svgs/faceswapShowcaseMobile.svg";
 import faceswapGraident from "../public/svgs/faceswapGradient.svg";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
-
+import DiscountCountdown from "./landing/countdown";
 
 const Main = () => {
+    
     return (
        <div id="landing-container" className="pt-12">
             <Image 
@@ -171,7 +173,17 @@ const Main = () => {
 
             {/* Pricing */}
             <div id="pricing-container" className="pt-64 flex flex-col justify-center items-center">
-                <div id="pricing-text" className="text-center">
+                <div id="pricing-badge" className="flex rounded-xl h-[32px] items-center px-3">
+                    <Image 
+                        alt="red-clock"
+                        src={redClock}
+                    />
+                    <div id="pricing-badge-text" className="ml-2 flex space-x-1">
+                        <p className="text-red-600 font-bold">Huge Discount</p>
+                        <DiscountCountdown />
+                    </div>
+                </div>
+                <div id="pricing-text" className="text-center mt-4">
                     <p className="text-3xl font-semibold">Pricing <span>🚀</span></p>
                     <p>Try for free and upgrade to get more and better features.</p>
                 </div>
