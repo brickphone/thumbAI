@@ -87,6 +87,10 @@
     background-color: #F0FDF4;
 }
 
+  #beta-badge {
+    background-color: #FEF2F2;
+  }
+
   @layer base {
     * {
       @apply border-border;
